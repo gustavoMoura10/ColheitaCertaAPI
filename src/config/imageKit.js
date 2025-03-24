@@ -1,7 +1,7 @@
 let ImageKit = require("imagekit");
 
 exports.ImageKit = new ImageKit({
-    publicKey : "public_zaeIUgLTcUUUgvrLQnhDq+TXzGE=",
-    privateKey : "private_gt9I3tOTsTO+41XsEu5ts027an8=",
-    urlEndpoint : "https://ik.imagekit.io/hmtqyxcegz"
+    publicKey : process.env.PUBLIC_KEY_IMAGEKIT,
+    privateKey : process.env.PRIVATE_KEY_IMAGEKIT,
+    urlEndpoint : process.env.ENDPOINT_IMAGEKIT
 });
